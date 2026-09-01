@@ -298,7 +298,9 @@ const Announcements = (() => {
       throw new Error('No devices connected');
     }
 
-    Logger.info(`Replaying profile "${profile.deviceName}" to ${devices.length} device(s) in parallel...`);
+    Logger.info(
+      `Replaying profile "${profile.deviceName}" to ${devices.length} device(s) in parallel...`,
+    );
 
     const settled = await Promise.allSettled(
       devices.map((dev) => replayToDeviceInfo(captureId, dev)),

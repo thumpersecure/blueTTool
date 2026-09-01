@@ -524,7 +524,10 @@ assert(annJs.includes('getCaptures'), 'Exposes getCaptures for capture list');
 assert(annJs.includes('clearCaptures'), 'Exposes clearCaptures');
 assert(annJs.includes('exportCapture'), 'Exposes exportCapture for JSON export');
 assert(annJs.includes('importCapture'), 'Exposes importCapture for JSON import');
-assert(annJs.includes('replayToAllConnectedDevices'), 'Exposes replayToAllConnectedDevices for parallel replay');
+assert(
+  annJs.includes('replayToAllConnectedDevices'),
+  'Exposes replayToAllConnectedDevices for parallel replay',
+);
 assert(annJs.includes('written, skipped, failed'), 'Replay returns written/skipped/failed counts');
 assert(annJs.includes('captureFromDevice'), 'Has captureFromDevice');
 assert(annJs.includes('captureFromDeviceId'), 'Has captureFromDeviceId with options');
